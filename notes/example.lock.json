@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "scalaCliVersion": "1.10.0",
+  "generated": "2026-05-05T12:34:56Z",
+  "inputs": {
+    "scalaVersions": ["3.7.4"],
+    "platforms": ["jvm", "native"],
+    "scalaJsVersion": null,
+    "scalaNativeVersion": "0.5.7",
+    "scalaJsCliVersion": null,
+    "scalaNativeCliVersion": "0.5.7",
+    "bloopVersion": "2.0.10",
+    "scalafixVersion": null,
+    "ammoniteVersion": null,
+    "javaVersion": 21
+  },
+  "repositories": [
+    {"id": "central", "url": "https://repo1.maven.org/maven2"}
+  ],
+  "fingerprints": {
+    "userDirectives": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "buildOptions":   "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+    "scalaCliConstants": "sha256:3333333333333333333333333333333333333333333333333333333333333333"
+  },
+  "buckets": {
+    "user.main.jvm.scala-3.7.4": {
+      "kind": "user",
+      "scope": "main",
+      "platform": "jvm",
+      "intransitive": false,
+      "inputs": {
+        "scalaVersion": "3.7.4",
+        "scalaBinaryVersion": "3",
+        "scalaJsVersion": null,
+        "scalaNativeVersion": null,
+        "extra": {}
+      },
+      "extraRepositories": [],
+      "roots": [
+        {
+          "module": "com.lihaoyi::os-lib",
+          "version": "0.10.7",
+          "intransitive": false,
+          "exclusions": [],
+          "configuration": "default(compile)",
+          "attributes": {"type": "jar"},
+          "userParams": []
+        }
+      ],
+      "forcedVersions": [
+        {"module": "org.scala-lang:scala3-library_3",  "version": "3.7.4"},
+        {"module": "org.scala-lang:scala3-compiler_3", "version": "3.7.4"}
+      ],
+      "nodes": [
+        {
+          "module": "com.lihaoyi:os-lib_3",
+          "version": "0.10.7",
+          "configuration": "default",
+          "dependencies": [
+            {"module": "com.lihaoyi:geny_3", "version": "1.1.1"},
+            {"module": "org.scala-lang:scala3-library_3", "version": "3.7.4"}
+          ],
+          "artifacts": [
+            {
+              "classifier": "",
+              "extension": "jar",
+              "url": "https://repo1.maven.org/maven2/com/lihaoyi/os-lib_3/0.10.7/os-lib_3-0.10.7.jar",
+              "sha256": "0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a",
+              "size": 213456
+            }
+          ],
+          "pom": {"packaging": "jar", "scope": "compile"}
+        },
+        {
+          "module": "com.lihaoyi:geny_3",
+          "version": "1.1.1",
+          "configuration": "default",
+          "dependencies": [
+            {"module": "org.scala-lang:scala3-library_3", "version": "3.7.4"}
+          ],
+          "artifacts": [
+            {
+              "classifier": "",
+              "extension": "jar",
+              "url": "https://repo1.maven.org/maven2/com/lihaoyi/geny_3/1.1.1/geny_3-1.1.1.jar",
+              "sha256": "0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b",
+              "size": 87654
+            }
+          ],
+          "pom": {"packaging": "jar", "scope": "compile"}
+        },
+        {
+          "module": "org.scala-lang:scala3-library_3",
+          "version": "3.7.4",
+          "configuration": "default",
+          "dependencies": [
+            {"module": "org.scala-lang:scala-library", "version": "2.13.15"}
+          ],
+          "artifacts": [
+            {
+              "classifier": "",
+              "extension": "jar",
+              "url": "https://repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.7.4/scala3-library_3-3.7.4.jar",
+              "sha256": "0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c",
+              "size": 1234567
+            }
+          ],
+          "pom": {"packaging": "jar", "scope": "compile"}
+        },
+        {
+          "module": "org.scala-lang:scala-library",
+          "version": "2.13.15",
+          "configuration": "default",
+          "dependencies": [],
+          "artifacts": [
+            {
+              "classifier": "",
+              "extension": "jar",
+              "url": "https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.15/scala-library-2.13.15.jar",
+              "sha256": "0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d",
+              "size": 5678901
+            }
+          ],
+          "pom": {"packaging": "jar", "scope": "compile"}
+        }
+      ]
+    },
+
+    "tooling.scala-compiler.scala-3.7.4": {
+      "kind": "tooling",
+      "scope": null,
+      "platform": null,
+      "intransitive": false,
+      "inputs": {
+        "scalaVersion": "3.7.4",
+        "scalaBinaryVersion": "3",
+        "extra": {}
+      },
+      "extraRepositories": [],
+      "roots": [
+        {
+          "module": "org.scala-lang::scala3-compiler",
+          "version": "3.7.4",
+          "intransitive": false,
+          "exclusions": [],
+          "configuration": "default(compile)",
+          "attributes": {"type": "jar"},
+          "userParams": []
+        }
+      ],
+      "forcedVersions": [],
+      "nodes": [
+        {
+          "module": "org.scala-lang:scala3-compiler_3",
+          "version": "3.7.4",
+          "configuration": "default",
+          "dependencies": [
+            {"module": "org.scala-lang:scala3-library_3", "version": "3.7.4"},
+            {"module": "org.scala-lang:tasty-core_3", "version": "3.7.4"},
+            {"module": "org.scala-lang:scala3-interfaces", "version": "3.7.4"},
+            {"module": "org.jline:jline-reader", "version": "3.27.1"}
+          ],
+          "artifacts": [
+            {
+              "classifier": "",
+              "extension": "jar",
+              "url": "https://repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.7.4/scala3-compiler_3-3.7.4.jar",
+              "sha256": "1010101010101010101010101010101010101010101010101010101010101010",
+              "size": 12345678
+            }
+          ],
+          "pom": {"packaging": "jar", "scope": "compile"}
+        }
+      ]
+    },
+
+    "tooling.scala-native-cli.0.5.7": {
+      "kind": "tooling",
+      "scope": null,
+      "platform": "native",
+      "intransitive": false,
+      "inputs": {
+        "scalaNativeCliVersion": "0.5.7",
+        "extra": {}
+      },
+      "extraRepositories": [],
+      "roots": [
+        {
+          "module": "org.scala-native:scala-native-cli_2.12",
+          "version": "0.5.7",
+          "intransitive": false,
+          "exclusions": [],
+          "configuration": "default(compile)",
+          "attributes": {"type": "jar"},
+          "userParams": []
+        }
+      ],
+      "forcedVersions": [],
+      "nodes": [
+        {
+          "module": "org.scala-native:scala-native-cli_2.12",
+          "version": "0.5.7",
+          "configuration": "default",
+          "dependencies": [
+            {"module": "org.scala-lang:scala-library", "version": "2.12.20"}
+          ],
+          "artifacts": [
+            {
+              "classifier": "",
+              "extension": "jar",
+              "url": "https://repo1.maven.org/maven2/org/scala-native/scala-native-cli_2.12/0.5.7/scala-native-cli_2.12-0.5.7.jar",
+              "sha256": "2020202020202020202020202020202020202020202020202020202020202020",
+              "size": 3456789
+            }
+          ],
+          "pom": {"packaging": "jar", "scope": "compile"}
+        }
+      ]
+    },
+
+    "tooling.compiler-plugins.scala-3.7.4.native-0.5.7": {
+      "kind": "tooling",
+      "scope": null,
+      "platform": "native",
+      "intransitive": true,
+      "inputs": {
+        "scalaVersion": "3.7.4",
+        "scalaNativeVersion": "0.5.7",
+        "extra": {}
+      },
+      "extraRepositories": [],
+      "roots": [
+        {
+          "module": "org.scala-native:::nscplugin",
+          "version": "0.5.7",
+          "intransitive": true,
+          "exclusions": [],
+          "configuration": "default(compile)",
+          "attributes": {"type": "jar"},
+          "userParams": [["intransitive", null]]
+        }
+      ],
+      "forcedVersions": [],
+      "nodes": [
+        {
+          "module": "org.scala-native:nscplugin_3.7.4",
+          "version": "0.5.7",
+          "configuration": "default",
+          "dependencies": [],
+          "artifacts": [
+            {
+              "classifier": "",
+              "extension": "jar",
+              "url": "https://repo1.maven.org/maven2/org/scala-native/nscplugin_3.7.4/0.5.7/nscplugin_3.7.4-0.5.7.jar",
+              "sha256": "3030303030303030303030303030303030303030303030303030303030303030",
+              "size": 234567
+            }
+          ],
+          "pom": {"packaging": "jar", "scope": "compile"}
+        }
+      ]
+    },
+
+    "tooling.bloop.2.0.10": {
+      "kind": "tooling",
+      "scope": null,
+      "platform": null,
+      "intransitive": false,
+      "inputs": {
+        "bloopVersion": "2.0.10",
+        "scalaVersion": "2.12.20",
+        "extra": {}
+      },
+      "extraRepositories": [
+        {"id": "central-snapshots", "url": "https://central.sonatype.com/repository/maven-snapshots/"}
+      ],
+      "roots": [
+        {
+          "module": "ch.epfl.scala::bloop-frontend",
+          "version": "2.0.10",
+          "intransitive": false,
+          "exclusions": [],
+          "configuration": "default(compile)",
+          "attributes": {"type": "jar"},
+          "userParams": []
+        }
+      ],
+      "forcedVersions": [],
+      "nodes": [
+        {
+          "module": "ch.epfl.scala:bloop-frontend_2.12",
+          "version": "2.0.10",
+          "configuration": "default",
+          "dependencies": [],
+          "artifacts": [
+            {
+              "classifier": "",
+              "extension": "jar",
+              "url": "https://repo1.maven.org/maven2/ch/epfl/scala/bloop-frontend_2.12/2.0.10/bloop-frontend_2.12-2.0.10.jar",
+              "sha256": "4040404040404040404040404040404040404040404040404040404040404040",
+              "size": 4567890
+            }
+          ],
+          "pom": {"packaging": "jar", "scope": "compile"}
+        }
+      ]
+    }
+  },
+  "binaries": {}
+}
